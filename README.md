@@ -1,2 +1,2 @@
-# spangler-site
+# ianspangler
 My personal website.
