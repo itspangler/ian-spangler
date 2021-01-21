@@ -10157,7 +10157,11 @@ header.masthead h1 {
   /* opacity: 0.75; */
 }
 
-.transparent {
+.transp-50 {
+  opacity: 0.5;
+}
+
+.transp-75 {
   opacity: 0.75;
 }
 
