@@ -136,6 +136,7 @@ blockquote {
 b,
 strong {
   font-weight: bolder;
+  text-decoration: underline;
 }
 
 small {
