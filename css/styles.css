@@ -10169,3 +10169,7 @@ header.masthead h1 {
   border-radius: 50%;
   box-shadow: 20px -20px rgba(0,0,0,0.6);
 }
+
+.round {
+  border-radius: 8px;
+}
