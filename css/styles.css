@@ -10147,7 +10147,7 @@ header.masthead h1 {
 }
 
 .hangingindent {
-  padding-left:36px;
+  padding-left: 36px;
   text-indent: -36px;
 }
 
@@ -10176,4 +10176,8 @@ header.masthead h1 {
 
 .rotate {
   transform: rotate(270deg);
+}
+
+.align-bottom {
+  vertical-align: text-bottom;
 }
