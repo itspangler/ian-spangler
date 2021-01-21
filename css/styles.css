@@ -10160,3 +10160,8 @@ header.masthead h1 {
 .transparent {
   opacity: 0.75;
 }
+
+.shadow {
+  border-radius: 50%;
+  box-shadow: 20px -20px rgba(0,0,0,0.6);
+}
