@@ -10150,3 +10150,13 @@ header.masthead h1 {
   padding-left:36px;
   text-indent: -36px;
 }
+
+.bw {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  /* opacity: 0.75; */
+}
+
+.transparent {
+  opacity: 0.75;
+}
