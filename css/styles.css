@@ -10173,3 +10173,7 @@ header.masthead h1 {
 .round {
   border-radius: 8px;
 }
+
+.rotate {
+  transform: rotate(270deg);
+}
