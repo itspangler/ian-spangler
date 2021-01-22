@@ -133,7 +133,11 @@ blockquote {
   margin: 0 0 1rem;
 }
 
-b,
+b {
+  font-weight: bolder;
+}
+
+
 strong {
   font-weight: bolder;
   text-decoration: underline;
@@ -10166,9 +10170,9 @@ header.masthead h1 {
   opacity: 0.75;
 }
 
-.shadow {
+.shadow1 {
   border-radius: 50%;
-  box-shadow: 20px -20px rgba(0,0,0,0.6);
+  box-shadow: 1px -1px 10px rgba(0,0,0,0.6);
 }
 
 .round {
@@ -10181,4 +10185,8 @@ header.masthead h1 {
 
 .align-bottom {
   vertical-align: text-bottom;
+}
+
+.shadow2 {
+  text-shadow: 2px 2px 5px black;
 }
