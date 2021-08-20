@@ -10190,3 +10190,10 @@ header.masthead h1 {
 .shadow2 {
   text-shadow: 2px 2px 5px black;
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
