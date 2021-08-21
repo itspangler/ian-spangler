@@ -4327,7 +4327,7 @@ input[type=button].btn-block {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  /* border: 1px solid rgba(0, 0, 0, 0.125); */
   border-radius: 0.25rem;
 }
 .card > hr {
@@ -4357,6 +4357,7 @@ input[type=button].btn-block {
   flex: 1 1 auto;
   min-height: 1px;
   padding: 1.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 .card-title {
@@ -10205,4 +10206,14 @@ header.masthead h1 {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+.featured-text {
+  padding: 2rem;
+}
+@media (min-width: 992px) {
+  .featured-text {
+    padding: 0 0 0 2rem;
+    border-left: 0.3rem solid rgba(0, 0, 0, 0.65);
+  }
 }
