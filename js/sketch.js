@@ -48,6 +48,7 @@ function draw() {
   for (let j = 1; j < num; j++) {
     let val = (j / num) * 204.0 + 51;
     stroke(val);
+    strokeWeight(5);
     line(ax[j - 1], ay[j - 1], ax[j], ay[j]);
   }
 }
