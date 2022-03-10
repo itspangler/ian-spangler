@@ -5,15 +5,17 @@
   <title>ian spangler | geography</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="Ian Spangler. Geographer, essayist, cartographer. Current PhD Candidate in the Department of Geography at University of Kentucky." />
+  <meta name="description" content="Ian Spangler | Geographer, essayist, cartographer | Current PhD Candidate in the Department of Geography at University of Kentucky" />
   <meta name="author" content="Ian Spangler" />
   <meta name="google-site-verification" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta property="og:title" content="Website of Ian Spangler. Geographer, essayist, cartographer. Current PhD Candidate in the Department of Geography at University of Kentucky.">
   <meta property="og:image" content="assets/img/spangler-headshot.png">
   <!-- Favicon-->
   <link rel="icon" type="image/x-icon" href="assets/img/compass.png" />
-  <!-- Font Awesome icons (free version)-->
+  <!-- Font Awesome icons-->
   <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+  <!-- P5 -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
   <!-- Google fonts-->
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
@@ -26,7 +28,7 @@
 <body id="page-top">
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-    <div class="container">
+    <div class="container-fluid">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">ian spangler</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
           class="navbar-toggler-icon"></span></button>
@@ -44,525 +46,40 @@
     </div>
   </nav>
   <!-- Masthead-->
-  <header class="masthead">
+  <header class="canvas" id="masthead">
+    <script src="js/sketch.js"></script>
     <div class="container h-100">
       <div class="row h-100 align-items-center justify-content-center text-center">
         <div class="col-lg-12 align-self-end">
-          <h1 class="text-white font-weight-bold">essayist | geographer | cartographer</h1>
+          <h3 class="text-white font-weight-bold">essayist | geographer | cartographer</h1>
           <hr class="divider my-4 light" />
         </div>
-        <div class="col-lg-12 justify-content-center align-self-baseline">
+        <div class="col-lg-12 align-self-baseline">
           <div class="col-sm-12">
-            <p class="text-center text-white shadow2">ph.d candidate in the department of geography at u. of kentucky</p>
-            <p class="text-center text-white shadow2">urban cultural & economic geographer</p>
-            <p class="text-center text-white shadow2">studying proptech and affordable housing</p>
+            <h6 class="text-white text-center">ph.d candidate in the department of geography at u. of kentucky</h6>
+            <h6 class="text-white text-center">urban cultural & economic geographer</h6>
+            <h6 class="text-white text-center">studying proptech and housing</h6>
           </div>
-        </div>
-        <div class="transp-50 small align-bottom text-white shadow2"><em>check out my latest essay, "Red Wine Vinegar," <a href="#creative">here</a></em>
         </div>
       </div>
     </div>
   </header>
-  <!-- About-->
-  <section class="page-section" id="about">
-    <div class="container">
-      <h2 class="text-center mt-0">introductions</h2>
-      <!-- <hr class="divider my-4" /> -->
-    </div>
-    <div class="container px-4 px-lg-5">
-      <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-        <div class="col-xl-6 col-lg-6"><br>
-          <img class="img-fluid shadow1" src="assets/img/headshot-bricks.jpeg" alt="ian spangler headshot">
-          <!-- <div class="container">
-            <div class="small text-center text-muted mt-4">pc: olivia c. meyer</div><br>
-          </div> -->
-        </div>
-        <div class="col-xl-6 col-lg-6">
-          <div class="featured-text text-lg-left">
-            <!-- <h4>a little about me...</h4> -->
-            <p>My name is <b>Ian Spangler</b> and I am a <b>geographer, writer, and cartographer</b>. I'm interested in how digital geo-technologies mediate our experiences of the places where we live. After earning my BA in English and Geography in 2016, I began pursuing a graduate degree
-              at the <a target=blank href="https://geography.as.uky.edu/user/31660/">UK
-                Department of Geography</a>. I've previously studied gentrification, emotional labor, and short-term rentals in New Orleans. Presently, my dissertation work explores the <b>design and use of digital real estate platforms</b>,
-              especially in
-              the US context.</p>
-            <p>I'm originally from outside of Richmond, VA. I like chess, though I'm not all that good at it. I dislike fluorescent lighting, and am a morning person, but only at night. I nourish my soul by crafting artisanal memes about <em>Twin Peaks</em>, writing sea shanties, and playing
-              <em>Dungeons & Dragons</em> every Friday night.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- Load sections -->
 
-  <!-- Pubs-->
-  <section class="page-section bg-primary" id="pubs">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          <h2 class="text-white mt-0">publications & presentations</h2>
-          <hr class="divider light my-4" />
-          <p class="text-white">[<a target='blank' href="assets/spangler_cv_082021.pdf">download my full c.v. here</a>]</p>
-          <!-- <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a> -->
-          <p class="text-white">[<a class="js-scroll-trigger" href="#contact">contact me with questions about presentations</a>]</p>
-        </div>
-      </div>
-      <div class="container-fluid small">
-        <div class="row">
-          <div class="col-lg-6">
-            <h6 class="text-white mb-4">peer-reviewed articles</h6>
-            <p class="text-white-50 hangingindent"><strong>Spangler, Ian</strong>. 2021. “What Seeps from the Pores.” <em>you are here: a journal of creative geography 22: 6-13.</em>
-              (<a target="blank" href="https://youareheregeography.com/technology-knowledge-and-the-state/what-seeps-from-the-pores/">free</a> | <a target="blank"
-                href="https://www.lulu.com/en/us/shop/deborah-ruiz-and-emma-lawlor-and-eden-kinkaid/you-are-here-the-journal-of-creative-geography/paperback/product-ze22w8.html?page=1&pageSize=4">buy issue</a>)</p>
-            <p class="text-white-50 hangingindent"><strong>Spangler, Ian</strong>. 2020. “Hidden value in the platform’s platform: Airbnb, displacement, and the un-homing spatialities of emotional labor.” <em>Transactions of the Institute of British
-                Geographers</em>
-              45:
-              575-588. (<a target="blank" href="https://doi.org/10.1111/tran.12367">paywall</a> | <a target="blank"
-                href="https://www.researchgate.net/publication/338039508_Hidden_value_in_the_platform&#x27s_platform_Airbnb_displacement_and_the_un-homing_spatialities_of_emotional_labor#fullTextFileContent">free</a>)</p>
-            <p class="text-white-50 hangingindent">Stone, Meredith, <strong>Ian Spangler</strong>, Xavier Griffin, and Stephen Hanna. 2016. "Searching for the Enslaved in the ‘Cradle of Democracy’: Virginia’s James River Plantations and the
-              Reproduction of
-              Local
-              Social
-              Memories." <em>Southeastern Geographer</em> 56.2: 203-222. (<a target="blank" href="https://www.jstor.org/stable/26233788?seq=1#metadata_info_tab_contents">free</a>)</p>
-            <h6 class="text-white mb-4">peer-reviewed conference proceedings</h6>
-            <p class="text-white-50 hangingindent">Nemer, David, <strong>Ian Spangler</strong> and Michaelanne Dye. 2018. “Airbnb and the Costs of Emotional Labor in Havana, Cuba.” <em>21st ACM Conference on Computer-Supported Cooperative Work and
-                Social
-                Computing</em>,
-              245-248. (<a target="blank" href="https://dl.acm.org/doi/abs/10.1145/3272973.3274066">paywall</a> | <a target="blank"
-                href="https://www.researchgate.net/publication/328228676_Airbnb_and_the_Costs_of_Emotional_Labor_in_Havana_Cuba">free</a>)</p>
-            <h6 class="text-white mb-4">book reviews</h6>
-            <p class="text-white-50 hangingindent"><strong>Spangler, Ian</strong>. 2019. Review of Work: The Last 1,000 Years, by Andrea Komlosy. <em>Labour and Industry: A Journal of the Social and Economic Relations of Work</em>. 29.4: 388-391. (<a
-                target="blank" href="https://www.tandfonline.com/doi/abs/10.1080/10301763.2019.1697430?journalCode=rlab20">paywall</a>)</p>
-            <p class="text-white-50 hangingindent"><strong>Spangler, Ian</strong>. 2019. Review of Welcome to Fairyland: Queer Miami before 1940, by Julian Capó Jr.
-              <em>Antipode Book
-                Review
-                Symposium</em>. (<a target='blank' href="https://antipodeonline.org/2019/05/30/queer-geographies-symposium/">free</a>)
-            </p>
-            <p class="text-white-50 hangingindent"><strong>Spangler, Ian</strong>. 2019. Review of Creole Italian: Sicilian Immigrants and the Shaping of New Orleans Food Culture, by Justin A. Nystrom. <em>The AAG Review of Books</em> 7.4: 243-246.
-              (<a target="blank" href="https://www.tandfonline.com/doi/pdf/10.1080/2325548X.2019.1650536?needAccess=true">free</a>)</p>
-            <h6 class="text-white mb-4">literary journals</h6>
-            <p class="text-white-50 hangingindent"><strong>Spangler, Ian</strong>. 2021. “Red Wine Vinegar.” <em>Southern Humanities Review</em> 54.2: 45-65. (<a href="http://www.southernhumanitiesreview.com/" target="blank">journal website</a>)</p>
-            <p class="text-white-50 hangingindent"><strong>Spangler, Ian</strong>. 2015. “Distortion, or Nothing Is Where You Think It Is.” <em>Blotterature Literary Magazine</em> 2.2: 4-14. (<a target='blank'
-                href="https://www.blotterature.com/vol2-2">journal website</a>)</p>
-            <h6 class="text-white mb-4">in preparation/under consideration</h6>
-            <p class="text-white-50 hangingindent">Zook, Matthew and <strong>Ian Spangler</strong>. “A crisis of data? Transparency practices and infrastructures of value in data broker platforms.” Submitted to <em>Annals of the American Association
-                of Geogrpahers</em>.</p>
-            <p class="text-white-50 hangingindent"><strong>Spangler, Ian</strong>. Submitted. “The Pony Island Lighthouse Keeper.”
-            <p class="text-white-50 hangingindent"><strong>Spangler, Ian</strong>. “Sweat matters: on the epistemology and spatial politics of perspiration.” For submission to <em>cultural geographies</em>.</p>
-          </div>
-          <div class="text-right col-lg-6">
-            <h6 class="text-white mb-4">selected paper presentations</h6>
-            <div class="row">
-              <div class="text-right col-lg-11">
-                <p class="text-white-50 ">“Data brokers in the platform economy: analyzing transparency as infrastructure in financialized debt markets.” <em>Digital Geographies Conference: Critical perspectives on the platform economy</em>. Virtual
-                  attendance.</p>
-              </div>
-              <div class="text-left col-lg-1">
-                <p class="text-white">2021</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="text-right col-lg-11">
-                <p class="text-white-50 ">“Codes, screens, and the racialization of platform real estate.” <em>RGS-IBG Meeting</em>. Virtual attendance.</p>
-              </div>
-              <div class="text-left col-lg-1">
-                <p class="text-white">2021</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="text-right col-lg-11">
-                <p class="text-white-50 ">“Dislocating frictions: race, financialization, and platform real estate technologies in the US.” <em>IAG-NZGS Combined Conference</em>. Virtual attendance.</p>
-              </div>
-              <div class="text-left col-lg-1">
-                <p class="text-white">2021</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="text-right col-lg-11">
-                <p class="text-white-50 ">“Conservative innovations: Understanding forms of development in digital real estate technologies.” <em>American Association of Geographers</em>. Virtual attendance.</p>
-              </div>
-              <div class="text-left col-lg-1">
-                <p class="text-white">2021</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="text-right col-lg-11">
-                <p class="text-white-50 ">“Sweat Matters: On the politics of perspiration.” <em>10th Annual Dimensions of Political Ecology Conference</em>. Lexington, Kentucky.</p>
-              </div>
-              <div class="text-left col-lg-1">
-                <p class="text-white">2020</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="text-right col-lg-11">
-                <p class="text-white-50 ">“Airbnb, gentrification, and the value of everyday life: playing host as emotional labor in New Orleans.” <em>American Association of Geographers</em>. Washington, D.C.</p>
-              </div>
-              <div class="text-left col-lg-1">
-                <p class="text-white">2019</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="text-right col-lg-11">
-                <p class="text-white-50 ">“Commodifying Authenticity in New Orleans: Airbnb and the Emotional Labor of Playing Host.” <em>American Association of Geographers</em>. New Orleans, Louisiana.</p>
-              </div>
-              <div class="text-left col-lg-1">
-                <p class="text-white">2018</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="text-right col-lg-11">
-                <p class="text-white-50 ">“Google, Airbnb, and Reproducing ‘The 73.’” <em>12th Annual Landscape, Space, and Place Conference</em>. Bloomington, Indiana.</p>
-              </div>
-              <div class="text-left col-lg-1">
-                <p class="text-white">2018</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="text-right col-lg-11">
-                <p class="text-white-50 ">“The ‘death-threat’ of Newtown Pike: Davis Bottom as a liminal landscape.” <em>11th Annual Landscape, Space, and Place Conference</em>. Bloomington, Indiana.</p>
-              </div>
-              <div class="text-left col-lg-1">
-                <p class="text-white">2017</p>
-              </div>
-            </div>
-            <h6 class="text-white mb-4">invited lectures & media appearances</h6>
-            <div class="row">
-              <div class="text-right col-lg-11">
-                <p class="text-white-50 ">"<a target="blank" href="https://www.youtube.com/watch?v=yK6xkyx3bMA&t=1s">Re-commoning Territory: Diversifying Housing Tenure with Platform Cooperatives</a>,” panelist with Maksym Rokmaniko, Maral
-                  Sotoudehnia, and Andy Yan. <em>221A Roundtable</em>. 18 June.</p>
-              </div>
-              <div class="text-left col-lg-1">
-                <p class="text-white">2021</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="text-right col-lg-11">
-                <p class="text-white-50 ">"<a target="blank" href="https://forum.savingplaces.org/blogs/forum-online/2019/02/21/webinar-the-rosenwald-schools-gis-mapping-project">The Rosenwald Schools: Creating a Spatial Dataset at the National
-                    Level</a>,” with Tiffany Tolbert and John Hildreth. <em>National Trust for Historic Preservation</em>: Preservation Leadership Forum Webinar
-                  Series. 30 January.</p>
-              </div>
-              <div class="text-left col-lg-1">
-                <p class="text-white">2019</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="text-right col-lg-11">
-                <p class="text-white-50 ">Interviewed by Sandy Hausman, with Dr. Stephen Hanna, Meredith Stone, and Xavier Griffin. <a target="blank" href="https://www.wvtf.org/post/more-tour-slave-history-virginias-plantations#stream/0">More to the
-                    tour: Slave history at Virginia’s plantations.”</a> <em>WVTF radioIQ</em>.</p>
-              </div>
-              <div class="text-left col-lg-1">
-                <p class="text-white">2015</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="text-right col-lg-11">
-                <p class="text-white-50 ">Interviewed by Emily Hollingsworth, with Dr. Stephen Hanna, Meredith Stone, and Xavier Griffin. <a target="blank" href="https://www.umw.edu/news/2015/03/16/umw-team-examines-slavery-narratives/">“UMW
-                    Team Examines Slavery Narratives.”</a> <em>UMW Eagle Eye</em>.</p>
-              </div>
-              <div class="text-left col-lg-1">
-                <p class="text-white">2015</p>
-              </div>
-            </div>
-            <p class="text-white-50 "></p>
-            <p class="text-white-50 "></p>
-            <p class="text-white-50 "></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Research-->
-  <section class="page-section" id="research">
-    <div class="container">
-      <h2 class="text-center mt-0">ongoing research projects</h2>
-      <hr class="divider my-4" />
-      <div>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-4">
-              <ol class="small text-center">
-                <h6>I. platform real estate.</h6>Following research from geographer <a target="blank" href="https://www.tandfonline.com/doi/abs/10.1080/02723638.2018.1524653">Joe Shaw</a>, my dissertation explores the
-                spatialization of digital real estate platforms. That is, how do new technologies for the management, transaction, surveyance and surveillance of real estate transform how we come to own the earth—and, perhaps more importantly, who
-                gets
-                to own it? <a href="https://itspangler.github.io/proptech/" target="blank">Learn more here</a>.
-                <img class='bw mx-auto rounded-circle img-fluid img-thumbnail mt-4 shadow' src="assets/img/projects/proptech.png" alt="from the verge">
-              </ol>
-            </div>
-            <div class="col-lg-4">
-              <ol class="small text-center">
-                <h6>II. short-term rentals.</h6>I have longstanding interests in short-term rental platforms and their relationships to the lived experiences of gentrification. Drawing on <a target="blank"
-                  href="https://www.mediapolisjournal.com/issues/platform-urbanism/">contemporary writing</a> about platform urbanism, <a target=blank href='https://rgs-ibg.onlinelibrary.wiley.com/doi/abs/10.1111/tran.12367'>my research into
-                  short-term
-                  rentals</a> shows how they facilitate feelings of "displacement in place"—and why that can actually be good for platforms like Airbnb.
-                <img class='bw mx-auto rounded-circle img-fluid img-thumbnail mt-4 shadow' src="assets/img/projects/airbnb.png" alt="photo by ian spangler">
-              </ol>
-            </div>
-            <div class="col-lg-4">
-              <ol class="small text-center">
-                <h6>III. sweat.</h6>Inspired by the <a target="blank" href="http://www.politicalecology.org/node/121">Sweat Geographies Collective</a>, I've recently become fascinated with how sweat has been constiuted as an object of medical
-                inquiry. Current trends in sweat sensing technology, which blur the lines
-                between medical devices and consumer goods, call into question: how does sweat "matter" in the age of ubiquitous computation?
-                <img class='bw mx-auto rounded-circle img-fluid img-thumbnail mt-4 shadow' src="assets/img/projects/sweat.png" alt="thumbprint">
-              </ol>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <div class="container">
-    <div class="small text-center text-muted">Image sources from left to right: <a target="blank" href="https://www.theverge.com/2019/2/1/18205174/automation-background-check-criminal-records-corelogic">The Verge</a> | Photo by author | <a
-        target="blank" href="https://onlinelibrary.wiley.com/doi/abs/10.1002/ar.1090120106">Clark & Lhamon 1917</a></div><br>
-  </div>
-  <!-- Portfolio-->
-  <section id="mapport" class="page-section bg-primary text-white">
-    <div class="container text-center bg-primary text-white">
-      <h2 class="mb-4">web mapping portfolio</h2>
-      <hr class="divider light my-4" />
-    </div>
-    <div class="row justify-content-center">
-      <div class="text-center col-lg-4">
-        <h5>A selection of my recent web mapping projects.</h5><br>
-        <p class="text-white-50">My cartography typically explores questions of race, representation, and memory in the context of the US South.
-        </p><br>
-      </div>
-    </div>
-    <div id="portfolio">
-      <div class="container-fluid p-0">
-        <div class="row justify-content-center no-gutters">
-          <div class="col-sm-3">
-            <a class="portfolio-box" target='blank' href="https://itspangler.github.io/Rosenwald-Schools/">
-              <img class="transp-75 img-fluid img-thumbnail" src="assets/img/portfolio/thumbnails/rosenwald-crop.png" alt="map by ian spangler" />
-              <div class="portfolio-box-caption">
-                <div class="project-category text-white-50">Category</div>
-                <div class="project-name">The Rosenwald Schools</div><br>
-                <div class="col-lg-8">
-                  <p class="small">Explore the Rosenwald Schools of the American South. A historical GIS in collaboration with <em>The National Trust for Historic Preservation</em> (Leaflet, JavaScript).</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-3">
-            <a class="portfolio-box" target='blank' href="https://nthp.maps.arcgis.com/apps/Cascade/index.html?appid=7541c163fb20486598969c7acb559663">
-              <img class="transp-75 img-fluid img-thumbnail" src="assets/img/portfolio/thumbnails/rosenwald-story-crop.png" alt="map by ian spangler" />
-              <div class="portfolio-box-caption">
-                <div class="project-category text-white-50">Category</div>
-                <div class="project-name">The Rosenwald Schools</div><br>
-                <div class="col-lg-8">
-                  <p class="small">Narrating the story of the Rosenwald Schools, through words, figures, and maps . In collaboration with the National Trust for Historic Preservation (ArcOnline, ArcGIS Pro, ArcGIS StoryMaps).</p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="row justify-content-center no-gutters">
-          <div class="col-sm-3">
-            <a class="portfolio-box" target='blank' href="https://itspangler.github.io/airbnb-lexington/">
-              <img class="transp-75 img-fluid img-thumbnail" src="assets/img/portfolio/thumbnails/airbnb-crop.png" alt="map by ian spangler" />
-              <div class="portfolio-box-caption">
-                <div class="project-category text-white-50">Category</div>
-                <div class="project-name">Airbnb</div><br>
-                <div class="col-lg-8">
-                  <p class="small">Explore the characteristics of Airbnb in Lexington, KY. A web mapping tool inspired by www.insideairbnb.com (Leaflet, JavaScript).</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-3">
-            <a class="portfolio-box" target='blank' href="https://itspangler.github.io/historic-north-claiborne/">
-              <img class="transp-75 img-fluid img-thumbnail" src="assets/img/portfolio/thumbnails/claiborne-crop.png" alt="map by ian spangler" />
-              <div class="portfolio-box-caption">
-                <div class="project-category text-white-50">Category</div>
-                <div class="project-name">Historic Claiborne Avenue</div><br>
-                <div class="col-lg-8">
-                  <p class="small">Explore the Black geographies of Claiborne Avenue in New Orleans. An interactive Sanborn map exhibition (Leaflet, JavaScript, IIIF).</p>
-                </div>
-              </div>
-          </div>
-          </a>
-        </div>
-      </div>
-    </div>
-    </div>
-  </section>
-  <!-- Creative-->
-  <section class="page-section" id="creative">
-    <div class="container">
-      <h2 class="text-center mt-0">creative writing</h2>
-      <hr class="divider my-4" />
-      <div class="row justify-content-center">
-        <div class="text-center col-lg-10">
-          <h5>essays and stories.</h5><br>
-          <p>I mostly write creative nonfiction, especially memoir-type stuff and researched essays. In it, I try to explore the complicated relationships between people and the places they inhabit. Previously, my writing's been published in
-            <em><a target="blank" href="https://www.blotterature.com/">Blotterature Literary Magazine</em></a>, <em><a target="blank" href="https://southernhumanitiesreview.com">Southern Humanities Review</em></a>, and <em><a target="blank"
-                href="https://youareheregeography.com/">you are here: the journal of creative geography</em></a>.
-          </p><br>
-        </div>
-      </div>
-      <div id="portfolio">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="center" style="width: 18rem;">
-                <a class="card portfolio-box" target='blank' href="assets/spangler_distortion_story.pdf">
-                  <img class="card-img-top" src="assets/img/distortion-cover.png" alt="blotterature cover">
-                  <div class="portfolio-box-caption">
-                    <div class="project-category text-white-50">Researched Essay</div>
-                    <div class="project-name"></div>Distortion, or<br>Nothing Is Where You Think It Is<br></br>
-                    <div class="col-lg-8">
-                      <p class="small"><i>Blotterature Literary Magazine (2.2)</i></p>
-                    </div>
-                  </div>
-                </a>
-                <div class="card-body">
-                  <p class="card-text small"><i>"When Steve Mishenko sat down in 1996 to pen a map of Johnsonburg, he probably never expected that it would still be looked at almost two decades later. He wasn't a geographer. Steve was simply a man
-                      with
-                      sore
-                      feet and a fantastic sense of direction—he never owned a car, and walked most places until the day he died. You wouldn't expect his presence to linger long after his death; yet, there we were..."</i></p>
-                </div>
-                <div class="card-body">
-                  <a href="assets/spangler_distortion_story.pdf" target="blank" class="card-link" style="text-align:center">Read here</a>
-                  <a href="https://www.blotterature.com/vol2-2" target="blank" class="card-link" style="text-align:center">Get the issue</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="center card" style="width: 18rem;">
-                <a class="card portfolio-box" target='blank' href="https://youareheregeography.com/technology-knowledge-and-the-state/what-seeps-from-the-pores/">
-                  <img class="card-img-top" src="assets/img/you-are-here-cover.png" alt="you are here cover">
-                  <div class="portfolio-box-caption">
-                    <div class="project-category text-white-50">Researched Essay</div>
-                    <div class="project-name"></div>What Seeps From The Pores<br></br>
-                    <div class="col-lg-8">
-                      <p class="small"><i>you are here: the journal of creative geography (22)</i></p>
-                    </div>
-                  </div>
-                </a>
-                <div class="card-body">
-                  <p class="card-text small"><i>"Sweat is contextual. Perspiration is epistemic. Sweat isn’t actually sweat at all. There’s no shortage of metaphors, turns of phrase, or manners of speaking that make us think about sweat in the
-                      abstract — but, despite being one of the most fundamental and ubiquitous expressions of
-                      everyday
-                      corporeal life, we rarely think of sweat literally. Except, maybe, for how to hide it. How to keep it in..."</i></p>
-                </div>
-                <div class="card-body">
-                  <a href="https://youareheregeography.com/technology-knowledge-and-the-state/what-seeps-from-the-pores/" target="blank" class="card-link" style="text-align:center">Read here</a>
-                  <a href="https://www.lulu.com/en/us/shop/deborah-ruiz-and-emma-lawlor-and-eden-kinkaid/you-are-here-the-journal-of-creative-geography/paperback/product-ze22w8.html?page=1&pageSize=4" target="blank" class="card-link"
-                    style="text-align:center">Get the issue</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="center card" style="width: 18rem;">
-                <a class="card portfolio-box" target='blank' href="https://youareheregeography.com/technology-knowledge-and-the-state/what-seeps-from-the-pores/">
-                  <img class="card-img-top" src="assets/img/southern-hum-cover.png" alt="southern humanities cover">
-                  <div class="portfolio-box-caption">
-                    <div class="project-category text-white-50">Researched Essay</div>
-                    <div class="project-name"></div>Red Wine Vinegar<br></br>
-                    <div class="col-lg-8">
-                      <p class="small"><i>Southern Huamnities Review (54.2)</i></p>
-                    </div>
-                  </div>
-                </a>
-                <div class="card-body">
-                  <p class="card-text small"><i>"The traps are a few tablespoons of red wine vinegar and dish soap poured into glass jars. They’re covered in saran wrap, and their surface area, pulled taut with a rubber band, has been judiciously
-                      poked by
-                      a
-                      fork or a toothpick. Flies will enter via the poked holes, drawn in by an abstract promise of sweet. Foolishly, they can’t figure out how to escape. The dish soap breaks the surface tension of the liquid and so the flies get
-                      stuck and..."</i></p>
-                </div>
-                <div class="card-body">
-                  <a href="http://www.southernhumanitiesreview.com/the-2020s.html#54.2" target="blank" class="center card-link" style="text-align:center">Get the issue</a>
-                </div>
-              </div>
-              <p></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Services-->
-  <section class="page-section bg-primary text-white" id="services">
-    <div class="container">
-      <h2 class="text-center text-white mt-0">services</h2>
-      <hr class="divider light" />
-      <div class="row justify-content-center">
-        <div class="col-sm-4">
-          <p class="text-center">I offer freelance services in copy editing, audio transcription, and GIS consulting. Please <a class="js-scroll-trigger" href="#contact">reach out to me via email</a> for samples, questions, or quotes.</p>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-            <i class="fas fa-4x fa-pencil-alt text-primary mb-4"></i>
-            <h3 class="h4 mb-2">copy editing</h3>
-            <p class="text-muted mb-0">Experience as a copy editor at <em>disClosure</em> and creative nonfiction editor at <em>Rappahannock Review</em>. </p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-            <i class="fas fa-4x fa-headphones text-primary mb-4"></i>
-            <h3 class="h4 mb-2">audio transcription</h3>
-            <p class="text-muted mb-0">Practical experience transcribing qualitative interviews in the context of academic research.</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-            <i class="fas fa-4x fa-laptop-code text-primary mb-4"></i>
-            <h3 class="h4 mb-2">GIS consulting</h3>
-            <p class="text-muted mb-0"> Fluent with Esri Suite, QGIS, and Leaflet. Practical experience in urban planning, hydrology, historical GIS.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Contact-->
-  <section class="page-section" id="contact">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          <h2 class="mt-0">contact</h2>
-          <hr class="divider my-4" />
-          <div class="row">
-            <div class="col-lg-3 col-md-6 text-center">
-              <div class="mt-5">
-                <!-- <i class="fas fa-4x fa-heart text-primary mb-4"></i> -->
-                <h3 class="h4 mb-2">email</h3>
-                <p class="text-muted mb-0">ian [dot] spangler [at] uky [dot] edu</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 text-center">
-              <div class="mt-5">
-                <!-- <i class="fas fa-4x fa-gem text-primary mb-4"></i> -->
-                <h3 class="h4 mb-2"><a target="blank" href="https://www.github.com/itspangler">github</a></h3>
-                <p class="text-muted mb-0">github.com/itspangler</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 text-center">
-              <div class="mt-5">
-                <!-- <i class="fas fa-4x fa-laptop-code text-primary mb-4"></i> -->
-                <h3 class="h4 mb-2"><a target="blank" href="https://twitter.com/itspangler">twitter</a></h3>
-                <p class="text-muted mb-0">@itspangler</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 text-center">
-              <div class="mt-5">
-                <!-- <i class="fas fa-4x fa-globe text-primary mb-4"></i> -->
-                <h3 class="h4 mb-2"><a target="blank" href="https://scholar.google.com/citations?user=3Wb9IhwAAAAJ&hl=en&oi=ao">google scholar</a></h3>
-                <!-- <p class="text-muted mb-0"></p> -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <div id="about"></div>
+  <div id="pubs"></div>
+  <div id="research"></div>
+  <div id="mapport"></div>
+  <div id="creative"></div>
+  <div id="services"></div>
+  <div id="contact"></div>
   <!-- Footer-->
-  <footer class="bg-light py-5">
+  <footer class="bg-light py-5 masthead">
     <div class="container">
-      <div class="small text-center text-muted">ian spangler | powered by <a target='blank' href='https://startbootstrap.com/theme/creativeBootstrap'>bootstrap</a> © 2020</div>
+      <div class="small text-center text-white">ian spangler © 2022 | theme modified from <a target='blank' href='https://startbootstrap.com/theme/creative'>bootstrap creative</a>, MIT License</div>
   </footer>
   <!-- Bootstrap core JS-->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Third party plugin JS-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
@@ -570,21 +87,5 @@
   <!-- Core theme JS-->
   <script src="js/scripts.js"></script>
 </body>
-
-<!-- <div class="small text-left col-lg-4">
-    <p>My fiction, in collaboration with Robby Hardesty, focuses on the misadventures of The Editors, a pair of libatious archivists who demand of the reader an impossible task: that they be taken seriously. We have no
-      control over when
-      these writings will be published; rather, we lay in waiting, anxiously wondering when the writings
-      will publish <em>us</em>. We are at their mercy.</p>
-  </div>
-  <div class="container-fluid">
-    <div class="row justify-content-center">
-      <div class="col-sm-8">
-        <img class="round img-fluid shadow" src="assets/img/editors-big.png" alt="the editors">
-        <br></br>
-        <p class="small text-center"><em>A rare image of The Editors, in their element, merrily adrift in the Russian Tundra.</em></p>
-      </div>
-    </div>
-  </div> -->
 
 </html>

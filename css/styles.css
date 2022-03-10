@@ -10020,7 +10020,7 @@ hr.light {
 
 /* .about {
   padding: 8rem 0;
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg") no-repeat center center fixed;
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/js/sketch.js") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -10089,7 +10089,7 @@ hr.light {
   }
 }
 
-header.masthead {
+header.canvas {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
   background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/editors-big.png");
@@ -10097,26 +10097,28 @@ header.masthead {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  z-index: -100;
 }
-header.masthead h1 {
+header.canvas h1 {
   font-size: 2.25rem;
 }
 @media (min-width: 992px) {
-  header.masthead {
+  header.canvas {
     height: 100vh;
     min-height: 40rem;
     padding-top: 4.5rem;
     padding-bottom: 0;
+    z-index: -100;
   }
-  header.masthead p {
+  header.canvas p {
     font-size: 1.15rem;
   }
-  header.masthead h1 {
+  header.canvas h1 {
     font-size: 3rem;
   }
 }
 @media (min-width: 1200px) {
-  header.masthead h1 {
+  header.canvas h1 {
     font-size: 3.5rem;
   }
 }
@@ -10185,6 +10187,11 @@ header.masthead h1 {
   box-shadow: 1px -1px 10px rgba(0,0,0,0.6);
 }
 
+.shadow-orange {
+  /* border-radius: 50%; */
+  box-shadow: -20px 20px 0px #f4623a;
+}
+
 .round {
   border-radius: 8px;
 }
@@ -10217,3 +10224,24 @@ header.masthead h1 {
     border-left: 0.3rem solid rgba(0, 0, 0, 0.65);
   }
 }
+
+footer.masthead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/editors-big.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+/* canvas {
+  display: block;
+  z-index: -1;
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/editors-big.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;} */

@@ -1,24 +1,11 @@
 /*!
-    * Start Bootstrap - Creative v6.0.4 (https://startbootstrap.com/theme/creative)
-    * Copyright 2013-2020 Start Bootstrap
-    * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE)
-    */
-    (function($) {
+ * Start Bootstrap - Creative v6.0.4 (https://startbootstrap.com/theme/creative)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE)
+ */
+ 
+(function($) {
   "use strict"; // Start of use strict
-
-  // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: (target.offset().top - 72)
-        }, 1000, "easeInOutExpo");
-        return false;
-      }
-    }
-  });
 
   // Closes responsive menu when a scroll trigger link is clicked
   $('.js-scroll-trigger').click(function() {
@@ -59,5 +46,15 @@
   //     tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
   //   }
   // });
+
+
+  // load HTML from separate pages
+  $("#about").load("01_about.html #about");
+  $("#pubs").load("02_pubs.html #pubs");
+  $("#research").load("03_research.html #research");
+  $("#mapport").load("04_mapping.html #mapport");
+  $("#creative").load("05_writing.html #creative");
+  $("#services").load("06_services.html #services");
+  $("#contact").load("07_contact.html #contact");
 
 })(jQuery); // End of use strict
